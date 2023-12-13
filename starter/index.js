@@ -96,16 +96,17 @@ const profitsLosses = [];
 // Populate the arrays with data
 finances.forEach(entry => {
   dates.push(entry[0]); // Creates Array caled 'dates' and pushes all dates (index[0]) into array 
-  profitsLosses.push(entry[1]); // Creates Array caled 'dates' and pushes all profit/loss figures (index[1]) into array 
+  profitsLosses.push(entry[1]); // Creates Array caled 'profitsLosses' and pushes all profit/loss figures (index[1]) into array 
 });
 
+//Headings
 console.log(dates);
 console.log(profitsLosses);
 
 // Function to calculate the average of an array of numbers
 const calculateAverage = array => array.reduce((a, b) => a + b, 0) / array.length;
 
-// Calculate the total number of months
+// Get the total number of months by checking length of 'dates' array
 const totalMonths = dates.length;
 
 // Calculate the net total amount of profit/losses
@@ -132,4 +133,4 @@ console.log("Total Months: " + totalMonths);
 console.log("Total: " + totalProfitsLosses);
 console.log("Average Change: " + averageChange.toFixed(2));
 console.log("Greatest Increase in Profits/Losses: " + maxIncreaseDate + " ($" + maxIncrease + ")");
-console.log(`Greatest Decrease in Profits/Losses: ${maxDecreaseDate} ($${maxDecrease})`);
+console.log("Greatest Decrease in Profits/Losses: " + maxDecreaseDate+ " ($" + maxDecrease + ")");
