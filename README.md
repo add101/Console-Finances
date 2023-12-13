@@ -1,5 +1,5 @@
 # Console-Finances
-Week 4 Challege for EdX Bootcamp
+Javascript Challege for EdX Bootcamp
 
 ## Description:
 
